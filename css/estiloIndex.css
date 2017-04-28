@@ -1,0 +1,211 @@
+/*Cuerpo de la pagina*/
+body{
+  font-family: "Dancing Script";
+  margin: 50px;
+}
+
+/*Animacion de la pagina*/
+@-webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: 5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+/*Encabezado*/
+.encabezado{
+  background-color: #5b7989;
+  color: white;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  animation: slidein 2s;
+}
+
+.contenedorTitulo{
+  margin-left: 20px;
+  text-align: left;
+  text-shadow: 2px 2px  #02010a;
+  width: 50%;
+}
+
+.contenedorTitulo h1{
+  margin: 20px;
+}
+
+.contenedorMenu{
+  text-align: right;
+  width: 50%;
+}
+
+.contenedorMenu nav{
+  font-size: 30px;
+  margin: 30px 20px 20px 20px;
+}
+ .menu ul li{
+   margin: 20px;
+   display: inline;
+ }
+
+a {
+  color: white;
+}
+
+/*Pagina Inicio*/
+.imgPrincipal{
+  background: #82c3a6;
+}
+
+[class^="cuadrado"]{
+  margin: 0 auto;
+  width: 50%;
+  padding: 1vw;
+  text-align: center;
+}
+
+[class^="cuadrado"] img{
+  box-shadow: 2px 2px 2px #02010a;
+  width: 80%;
+}
+
+.imgSecundaria{
+  background: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor1{
+  width: 50%;
+}
+
+.contenedor2{
+  width: 50%;
+}
+
+.cuadrado3 img{
+  width: 74%;
+}
+
+.cuadrado2 a{
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+.cuadrado3 a{
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+/*Efectos de las imagenes*/
+.cuadrado2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.cuadrado3 img:hover{
+  transform: translate3d(20px, -5px, 0);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+/* desde aqui empieza el footer*/
+.pie{
+  height: 315px;
+  text-align: left;
+  background-color: #C6d5c5;
+  color: black;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: row;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pie a{
+  color: black;
+}
+
+.contenedorContactos{
+  width: 25%;
+}
+
+.contenedorTerminos{
+  text-align: left;
+  width: 25%;
+}
+
+.contenedorSociales{
+  width: 25%;
+}
+
+.contenedorSociales img{
+  height: 30px;
+}
+
+.contenedorDerechos img{
+  height: 10px;
+}
+
+.contenedorDerechos{
+  width: 25%;
+}
+
+/* Web Adaptativo */
+@media screen and (max-width: 900px){
+/*Adaptando el encabezado*/
+  .encabezado{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedorTitulo{
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenedorMenu{
+    width: 100%;
+    text-align: center;
+  }
+
+/*Adaptando la pagina inicio*/
+.contenido{
+  width: 100%;
+}
+
+.imgSecundaria{
+  display: flex;
+  flex-direction: column;
+}
+/*Adaptando el pie*/
+  .pie{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedorContactos{
+    width: 100%;
+  }
+
+  .contenedorTerminos{
+    width: 100%;
+  }
+
+  .contenedorSociales{
+    width: 100%;
+  }
+
+  .contenedorDerechos{
+    width: 100%;
+  }
+}
