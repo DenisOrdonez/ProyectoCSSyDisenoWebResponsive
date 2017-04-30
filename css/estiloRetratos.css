@@ -59,57 +59,43 @@ a {
   color: white;
 }
 
-/*Pagina Inicio*/
-.imgPrincipal{
-  background: #82c3a6;
+/*Pagina Retratos*/
+.contenido{
+  background-color: #d5c75f;
+}
+
+.contenedor1,.contenedor2{
+  display: flex;
+  flex-direction: row;
 }
 
 [class^="cuadrado"]{
   margin: 0 auto;
-  width: 50%;
+  width: 30%;
   padding: 1vw;
   text-align: center;
 }
 
 [class^="cuadrado"] img{
   box-shadow: 2px 2px 2px #02010a;
-  width: 80%;
+  width: 90%;
 }
 
-.imgSecundaria{
-  background: #d5c75f;
-  border: 1px;
-  display: flex;
-  flex-direction: row;
+/*Efectos a las imagenes*/
+.cuadrado1{
+  -webkid-filter:blur(10px);
+  filter:blur(10px);
 }
 
-.cuadrado3 img{
-  width: 74%;
+.cuadrado3{
+  -webkid-filter:sepia(90%);
+  filter:sepia(90%);
 }
 
-.cuadrado2 a{
-  font-size: 25px;
-  text-align: center;
-  color: black;
+.cuadrado2,.cuadrado4,.cuadrado6{
+  -webkid-filter:grayscale(100%);
+  filter:grayscale(100%);
 }
-
-.cuadrado3 a{
-  font-size: 25px;
-  text-align: center;
-  color: black;
-}
-
-/*Efectos de las imagenes*/
-.cuadrado2 img:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px 2px #82c3a6;
-}
-
-.cuadrado3 img:hover{
-  transform: translate3d(20px, -5px, 0);
-  box-shadow: 2px 2px 2px #82c3a6;
-}
-
 /* desde aqui empieza el footer*/
 .pie{
   height: 315px;
@@ -170,18 +156,22 @@ a {
     text-align: center;
   }
 
-/*Adaptando la pagina inicio*/
+/*Adaptando la pagina Retratos*/
 .contenido{
   width: 100%;
 }
 
-.imgSecundaria{
+.contenedor1,.contenedor2{
   display: flex;
   flex-direction: column;
 }
 
-[class^="cuadrado"] img{
+[class^="cuadrado"]{
   width: 100%;
+}
+
+[class^="cuadrado"] img{
+  width: 60%;
 }
 
 /*Adaptando el pie*/
